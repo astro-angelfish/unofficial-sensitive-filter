@@ -8,6 +8,7 @@ import com.google.zxing.RGBLuminanceSource;
 import com.google.zxing.common.HybridBinarizer;
 import com.google.zxing.qrcode.QRCodeReader;
 import moe.orangemc.sensitivefilter.config.PluginConfig;
+import net.mamoe.mirai.console.plugin.description.PluginDependency;
 import net.mamoe.mirai.console.plugin.jvm.JavaPlugin;
 import net.mamoe.mirai.console.plugin.jvm.JvmPluginDescriptionBuilder;
 import net.mamoe.mirai.contact.Member;

@@ -22,8 +22,6 @@ suspend fun main() {
     MiraiConsoleTerminalLoader.startAsDaemon()
 
     //如果是Kotlin
-    PluginMain.load()
-    PluginMain.enable()
     //如果是Java
 //    JavaPluginMain.INSTANCE.load()
 //    JavaPluginMain.INSTANCE.enable()

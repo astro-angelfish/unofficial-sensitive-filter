@@ -21,3 +21,11 @@ dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.google.zxing:javase:3.5.2")
 }
+
+// Build with dependencies
+tasks {
+    jar {
+        from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }
+}
